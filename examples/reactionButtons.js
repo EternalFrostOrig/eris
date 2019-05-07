@@ -20,7 +20,7 @@ bot.registerCommand("ping", "Pong!", { // Make a ping command
             emoji: "⬅",
             type: "edit",
             response: (msg) => { // Reverse the message content
-                return msg.content.split().reverse().join();
+                return msg.content.split("").reverse().join("");
             }
         },
         {
